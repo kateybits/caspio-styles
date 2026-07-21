@@ -1,0 +1,407 @@
+.full-width,
+.info-item.full-width {
+  grid-column: 1 / -1 !important;
+}
+
+body {
+  background: #ffffff !important;
+}
+
+.cbFormTable {
+  max-width: 1100px !important;
+  margin: 0 auto !important;
+}
+
+.record-card,
+.form-section-card {
+  background: #ffffff !important;
+  border: 1px solid #d9e5e7 !important;
+  border-left: 6px solid #1d95a6 !important;
+  border-radius: 14px !important;
+  max-width: 1100px !important;
+  margin: 12px auto !important;
+  box-shadow: 0 2px 10px rgba(0,0,0,.04) !important;
+  overflow: hidden !important;
+}
+
+.record-card {
+  padding: 22px 28px !important;
+  margin-bottom: 10px !important;
+}
+
+.record-title {
+  font-size: 28px !important;
+  font-weight: 700 !important;
+  color: #1f2f38 !important;
+  line-height: 1.2 !important;
+  text-align: center !important;
+}
+
+.record-subtitle {
+  font-size: 16px !important;
+  color: #60737a !important;
+  margin-top: 4px !important;
+  text-align: center !important;
+}
+
+.summary-grid {
+  display: grid !important;
+  grid-template-columns: repeat(4, minmax(120px, 1fr)) !important;
+  gap: 18px 28px !important;
+  margin-top: 24px !important;
+}
+
+.summary-grid span {
+  display: block !important;
+  color: #60737a !important;
+  font-size: 13px !important;
+  margin-bottom: 5px !important;
+}
+
+.summary-grid strong {
+  display: block !important;
+  color: #1f2f38 !important;
+  font-size: 16px !important;
+  font-weight: 700 !important;
+}
+
+.form-section-header {
+  background: #e8f5f6 !important;
+  color: #076c75 !important;
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  padding: 12px 20px !important;
+}
+
+.form-section-body {
+  padding: 16px 24px !important;
+}
+
+.info-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0,1fr)) !important;
+  column-gap: 40px !important;
+  row-gap: 28px !important;
+  padding: 24px 28px !important;
+  align-items: start !important;
+}
+
+.info-item {
+  width: 100% !important;
+  border-bottom: 1px solid #edf2f3 !important;
+  padding-bottom: 12px !important;
+}
+
+.info-label {
+  color: #60737a !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  letter-spacing: .6px !important;
+  margin-bottom: 5px !important;
+}
+
+.info-value {
+  color: #1f2f38 !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  min-height: 20px !important;
+}
+
+.address-block {
+  line-height: 1.6 !important;
+  white-space: normal !important;
+}
+
+/* ---------- Global Caspio wrapper reset ---------- */
+/* cbHTMLBlockContainer is Caspio's generic HTML-block wrapper and shouldn't
+   carry any default spacing anywhere on this page — this is what was causing
+   the child-toggle / child-panel misalignment */
+
+.cbHTMLBlockContainer {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* ---------- Children section ---------- */
+
+.children-section {
+  margin: 0 !important;
+  padding-bottom: 22px !important;
+}
+
+.child-group-label {
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: .8px !important;
+  color: #076c75 !important;
+  text-align: center !important;
+  max-width: 1100px !important;
+  margin: 22px auto 10px !important;
+  padding-bottom: 8px !important;
+  border-bottom: 2px solid #e4eef1 !important;
+}
+
+.child-toggle {
+  background: #f6fbfc !important;
+  border: 1px solid #d9e5e7 !important;
+  border-left: 6px solid #1d95a6 !important;
+  border-radius: 12px !important;
+  padding: 16px 22px !important;
+  margin: 6px auto 0 !important;
+  max-width: 1100px !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+  font-size: 17px !important;
+  font-weight: 700 !important;
+  color: #1d3f46 !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  cursor: pointer !important;
+  transition: background 0.15s ease, box-shadow 0.15s ease !important;
+}
+
+.child-toggle:hover {
+  background: #eef8f9 !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,.05) !important;
+}
+
+.child-toggle.open {
+  border-radius: 12px 12px 0 0 !important;
+  background: #e8f5f6 !important;
+}
+
+.child-toggle-icon {
+  font-size: 18px !important;
+  color: #1d95a6 !important;
+  display: inline-block !important;
+  transition: transform 0.2s ease !important;
+}
+
+.child-toggle.open .child-toggle-icon {
+  transform: rotate(90deg) !important;
+}
+
+.child-panel {
+  display: none !important;
+  box-sizing: border-box !important;
+  overflow: hidden !important;
+  max-width: 1100px !important;
+  margin: 0 auto 14px !important;
+  background: #ffffff !important;
+  border: 1px solid #d9e5e7 !important;
+  border-left: 6px solid #1d95a6 !important;
+  border-top: none !important;
+  border-radius: 0 0 12px 12px !important;
+  padding: 18px 20px !important;
+}
+
+.child-panel.open {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 4px 28px !important;
+}
+
+.child-panel .cbFormNestedTableContainer {
+  display: block !important;
+  grid-column: span 1 !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+  border-bottom: 1px solid #edf2f3 !important;
+  padding: 8px 0 !important;
+}
+
+.child-panel .cbFormNestedTableContainer.full-width {
+  grid-column: 1 / -1 !important;
+}
+
+.child-panel .cbFormLabelCell,
+.child-panel .cbFormDataCell {
+  display: block !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+  white-space: normal !important;
+  word-break: break-word !important;
+  float: none !important;
+  clear: both !important;
+  padding: 0 !important;
+}
+
+.child-panel .cbFormLabelCell {
+  color: #60737a !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: .5px !important;
+  margin-bottom: 3px !important;
+}
+
+.child-panel .cbFormDataCell {
+  color: #102938 !important;
+  font-size: 15px !important;
+  font-weight: 700 !important;
+}
+
+.child-panel .cbFormDataCell:empty::after {
+  content: "—" !important;
+  color: #a7b3b8 !important;
+  font-weight: 400 !important;
+}
+
+/* ---------- Subsection labels (Registration / Re-Registration badges) ---------- */
+
+.child-subsection-label {
+  grid-column: 1 / -1 !important;
+  font-size: 12px !important;
+  font-weight: 800 !important;
+  text-transform: uppercase !important;
+  letter-spacing: .6px !important;
+  margin-top: 14px !important;
+  margin-bottom: 4px !important;
+  padding: 8px 14px !important;
+  border-radius: 6px !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+}
+
+.child-subsection-label.field-group-registration {
+  background: #e8f5f6 !important;
+  color: #076c75 !important;
+  border-left: 4px solid #1d95a6 !important;
+}
+
+.child-subsection-label.field-group-rereg {
+  background: #fdf1e2 !important;
+  color: #9a5b00 !important;
+  border-left: 4px solid #e8a13c !important;
+}
+
+.child-subsection-label .subsection-icon {
+  font-size: 14px !important;
+  line-height: 1 !important;
+}
+
+.field-group-registration,
+.field-group-rereg {
+  display: none !important;
+}
+
+.child-panel.reg-mode .field-group-registration {
+  display: block !important;
+}
+
+.child-panel.re-reg-mode .field-group-rereg {
+  display: block !important;
+}
+
+.child-display-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 14px 28px !important;
+  padding: 16px 20px !important;
+}
+
+.child-display-grid span {
+  display: block !important;
+  color: #60737a !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: .5px !important;
+  margin-bottom: 3px !important;
+}
+
+.child-display-grid strong {
+  color: #102938 !important;
+  font-size: 15px !important;
+  font-weight: 700 !important;
+}
+
+.child-actions {
+  background: #fafbfb !important;
+  border-top: 1px solid #edf2f3 !important;
+  padding: 14px 20px !important;
+}
+
+.child-actions-title {
+  color: #60737a !important;
+  font-size: 11px !important;
+  font-weight: 800 !important;
+  text-transform: uppercase !important;
+  letter-spacing: .5px !important;
+  margin-bottom: 8px !important;
+}
+
+/* ---------- Form field base styling ---------- */
+
+.cbFormLabelCell,
+.cbFormLabel {
+  color: #60737a !important;
+  font-weight: 500 !important;
+  font-size: 13px !important;
+  padding-top: 12px !important;
+  padding-bottom: 12px !important;
+  vertical-align: top !important;
+}
+
+.cbFormDataCell,
+.cbFormFieldCell {
+  color: #1f2f38 !important;
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  padding-top: 12px !important;
+  padding-bottom: 12px !important;
+  vertical-align: top !important;
+}
+
+.cbFormTable tr {
+  border-bottom: 1px solid #edf2f3 !important;
+}
+
+.cbFormTable td {
+  padding-left: 22px !important;
+  padding-right: 22px !important;
+}
+
+input:not(.child-toggle),
+select,
+textarea {
+  border-radius: 6px !important;
+  border: 1px solid #cfdadd !important;
+  padding: 6px 8px !important;
+  font-size: 14px !important;
+}
+
+.cbFormDataCell:empty::after,
+.cbFormFieldCell:empty::after {
+  content: "—" !important;
+  color: #a7b3b8 !important;
+  font-weight: 400 !important;
+}
+
+@media (max-width: 800px) {
+  .summary-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .info-grid,
+  .child-display-grid,
+  .child-panel.open {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .summary-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .record-title {
+    font-size: 23px !important;
+  }
+}
