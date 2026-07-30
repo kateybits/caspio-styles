@@ -16,96 +16,97 @@ body {
 .form-section-card {
   background: #ffffff !important;
   border: 1px solid #d9e5e7 !important;
-  border-left: 6px solid #1d95a6 !important;
-  border-radius: 14px !important;
+  border-left: 4px solid #1d95a6 !important;
+  border-radius: 6px !important;
   max-width: 1100px !important;
-  margin: 12px auto !important;
-  box-shadow: 0 2px 10px rgba(0,0,0,.04) !important;
+  margin: 8px auto !important;
+  box-shadow: none !important;
   overflow: hidden !important;
 }
 
 .record-card {
-  padding: 22px 28px !important;
-  margin-bottom: 10px !important;
+  padding: 14px 20px !important;
+  margin-bottom: 8px !important;
 }
 
 .record-title {
-  font-size: 28px !important;
+  font-size: 22px !important;
   font-weight: 700 !important;
   color: #1f2f38 !important;
   line-height: 1.2 !important;
-  text-align: center !important;
+  text-align: left !important;
 }
 
 .record-subtitle {
-  font-size: 16px !important;
+  font-size: 13px !important;
   color: #60737a !important;
-  margin-top: 4px !important;
-  text-align: center !important;
+  margin-top: 2px !important;
+  text-align: left !important;
 }
 
 .summary-grid {
   display: grid !important;
   grid-template-columns: repeat(4, minmax(120px, 1fr)) !important;
-  gap: 18px 28px !important;
-  margin-top: 24px !important;
+  gap: 10px 24px !important;
+  margin-top: 14px !important;
 }
 
 .summary-grid span {
   display: block !important;
   color: #60737a !important;
-  font-size: 13px !important;
-  margin-bottom: 5px !important;
+  font-size: 11px !important;
+  margin-bottom: 2px !important;
 }
 
 .summary-grid strong {
   display: block !important;
   color: #1f2f38 !important;
-  font-size: 16px !important;
-  font-weight: 700 !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
 }
 
 .form-section-header {
-  background: #e8f5f6 !important;
+  background: #f3f8f9 !important;
   color: #076c75 !important;
-  font-size: 16px !important;
+  font-size: 13px !important;
   font-weight: 700 !important;
-  padding: 12px 20px !important;
+  padding: 6px 16px !important;
+  border-bottom: 1px solid #e4eef1 !important;
 }
 
 .form-section-body {
-  padding: 16px 24px !important;
+  padding: 8px 16px !important;
 }
 
 .info-grid {
   display: grid !important;
   grid-template-columns: repeat(2, minmax(0,1fr)) !important;
-  column-gap: 40px !important;
-  row-gap: 28px !important;
-  padding: 24px 28px !important;
+  column-gap: 28px !important;
+  row-gap: 8px !important;
+  padding: 10px 16px !important;
   align-items: start !important;
 }
 
 .info-item {
   width: 100% !important;
   border-bottom: 1px solid #edf2f3 !important;
-  padding-bottom: 12px !important;
+  padding-bottom: 4px !important;
 }
 
 .info-label {
   color: #60737a !important;
-  font-size: 12px !important;
+  font-size: 11px !important;
   font-weight: 600 !important;
   text-transform: uppercase !important;
-  letter-spacing: .6px !important;
-  margin-bottom: 5px !important;
+  letter-spacing: .4px !important;
+  margin-bottom: 2px !important;
 }
 
 .info-value {
-  color: #1f2f38 !important;
-  font-size: 16px !important;
-  font-weight: 600 !important;
-  min-height: 20px !important;
+  color: #3a4a52 !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  min-height: 16px !important;
 }
 
 .address-block {
