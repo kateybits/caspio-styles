@@ -3,9 +3,12 @@
   grid-column: 1 / -1 !important;
 }
 
-body {
+html body {
   background: #ffffff !important;
   display: block !important;
+  justify-content: normal !important;
+  align-items: normal !important;
+  text-align: left !important;
 }
 
 .cbFormTable {
