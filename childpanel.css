@@ -5,6 +5,7 @@
 
 body {
   background: #ffffff !important;
+  display: block !important;
 }
 
 .cbFormTable {
@@ -423,4 +424,20 @@ div[style*="display: table"],
 div[style*="display:table"] {
   display: block !important;
   width: 100% !important;
+}
+
+/* Chain of wrappers between <body> and our content (article, Caspio's
+   AjaxCtnr divs, and the form itself) were all shrink-wrapping to their
+   content by default, so "width:100%" on inner elements had nothing
+   full-width to be 100% of. This fixes the whole chain at once. */
+
+article,
+[id^="cbOuterAjaxCtnr"],
+[id^="cbDataAjaxCtnr"],
+#caspioform {
+  width: 100% !important;
+  max-width: 100% !important;
+  display: block !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
 }
