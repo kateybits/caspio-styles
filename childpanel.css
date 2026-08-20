@@ -413,3 +413,14 @@ textarea {
   max-width: 1100px !important;
   margin: 0 auto !important;
 }
+
+/* The section above sits inside an unlabeled wrapper div with an inline
+   style="display:table;" and no width set — that also shrink-wraps to
+   content by default, which was still constraining everything even after
+   fixing the section itself. This targets that outer wrapper directly. */
+
+div[style*="display: table"],
+div[style*="display:table"] {
+  display: block !important;
+  width: 100% !important;
+}
